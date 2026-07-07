@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Andrew Sang | Portfolio</title>
     
     <style>
+        /* CSS to control section visibility */
         .tab-content {
             display: none; 
         }
@@ -14,10 +15,16 @@
             display: block; 
         }
 
+        /* Simple styling to make navigation links look interactive */
         nav a {
             cursor: pointer;
             color: blue;
             text-decoration: underline;
+        }
+
+        /* Basic project layout grouping */
+        .project-card {
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -66,40 +73,40 @@
         </ul>
     </section>
 
-    <!-- PROJECTS SECTION -->
     <section id="projects" class="tab-content">
         <h2>Projects</h2>
         <p>Here are some of the technical projects I have built:</p>
         
-        <!-- Project 1: Compound Calculator -->
         <div class="project-card">
             <h3>Compound Interest Calculator</h3>
             <p><strong>Tech Stack:</strong> Python, CustomTkinter, Matplotlib, NumPy</p>
             <p>A cross-platform desktop application designed to model and visualize long-term investment growth. Built with strict input-validation layers to entirely eliminate user misinput errors. It leverages NumPy for optimized compound interest array mathematics and integrates a Matplotlib plotting engine to render real-time, responsive data graphs.</p>
             
-            <!-- Project Image Placement -->
             <div style="margin: 15px 0;">
-                <!-- Replace 'calculator-screenshot.png' with your actual image filename later -->
                 <img src="calculator-screenshot.png" alt="Compound Interest Calculator Interface" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
             </div>
 
-            <!-- Action Links -->
             <p>
                 <a href="https://github.com/Galladian/CompoundCalculator" target="_blank">🔗 View Code on GitHub</a> 
                 &nbsp;|&nbsp; 
-                <!-- This assumes you drop your installer/executable file named 'CompoundCalculator.exe' into your repo folder later -->
-                <a href="CompoundCalculator.zip" download>📥 Download App (.zip)</a>
+                <a href="CompoundCalculator.zip" download="CompoundCalculator.zip">📥 Download App (.zip)</a>
             </p>
         </div>
         
-        <hr style="border-top: 1px dashed #ccc;"> <!-- Sub-divider between projects -->
+        <hr style="border-top: 1px dashed #ccc;">
 
-        <!-- Project 2 (Placeholder) -->
         <div class="project-card">
-            <h3>Project Title 2</h3>
-            <p><strong>Tech Stack:</strong> Language1, Tool2</p>
-            <p>A brief 2-3 sentence description of what this project does, the problem it solves, and how it works.</p>
-            <a href="https://github.com/Galladian" target="_blank">View Code on GitHub</a>
+            <h3>Comprehensive Financial Stock Screener</h3>
+            <p><strong>Tech Stack:</strong> Python, CustomTkinter, yfinance API, Pandas, NumPy, Matplotlib</p>
+            <p>A dynamic desktop analytics dashboard that consumes real-time market data via the yfinance API to evaluate and filter equities. Engineered a custom data-pipeline using Pandas and NumPy to compute complex financial indicators including Exponential Moving Averages (21 EMA), Relative Strength Index (RSI-14), and Moving Average Convergence Divergence (MACD). The front-end leverages Matplotlib object-oriented plotting to cleanly render multi-pane technical charts alongside custom UI control features.</p>
+            
+            <div style="margin: 15px 0;">
+                <img src="screener-screenshot.png" alt="Financial Stock Screener Dashboard" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+
+            <p>
+                <a href="https://github.com/Galladian/StockScreener" target="_blank">🔗 View Code on GitHub</a>
+            </p>
         </div>
     </section>
 
