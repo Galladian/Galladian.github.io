@@ -337,7 +337,7 @@
         <p>Feel free to reach out to me through any of the platforms below:</p>
         
         <ul>
-            <li><strong>Email:</strong> <a href="mailto:Andrewsang2006@gmail.com">Andrewsang2006@gmail.com</a></li>
+            <li><strong>Email:</strong> <span id="email-place"></span></li>
             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andrew-sang-b978422a0" target="_blank">linkedin.com/in/andrew-sang-b978422a0</a></li>
             <li><strong>GitHub:</strong> <a href="https://github.com/Galladian" target="_blank">github.com/Galladian</a></li>
         </ul>
@@ -382,6 +382,21 @@
             const modal = document.getElementById("imageModal");
             modal.style.display = "none";   // Hide the modal
         }
+
+        window.onload = function() {
+            // Break your email into variables so bots scanning text strings miss it
+            const user = "Andrewsang2006";
+            const domain = "gmail.com";
+            
+            const emailContainer = document.getElementById("email-place");
+            
+            // Create the clickable link dynamically
+            const link = document.createElement("a");
+            link.href = "mailto:" + user + "@" + domain;
+            link.innerText = user + "@" + domain;
+            
+            emailContainer.appendChild(link);
+        };
     </script>
 
 </body>
