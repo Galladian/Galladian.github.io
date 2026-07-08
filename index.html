@@ -231,6 +231,32 @@
         .project-card img:hover {
             opacity: 0.9; /* Subtle visual cue that it can be interacted with */
         }
+
+        skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill-tag {
+            background-color: #252a34;
+            border: 1px solid #2d3139;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            border-color: #3b82f6;
+            color: #ffffff;
+            background-color: #2d3139;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -263,6 +289,28 @@
                 <strong>Scientific computing with python:</strong> Achieved through FreeCodeCamp.org demonstrating my understanding of numerical methods and data analysis with Python (Earned: 2025).
             </li>
         </ul>
+
+        <h3>Technical Skills</h3>
+        <p><strong>Languages:</strong></p>
+        <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">Matlab</span>
+        </div>
+
+        <p><strong>Tools & Frameworks:</strong></p>
+        <div class="skills-grid">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">CustomTkinter</span>
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">VS Code</span>
+        </div>
 
         <h3>Technical Skills</h3>
         <ul>
