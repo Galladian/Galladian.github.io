@@ -398,6 +398,26 @@
                 </p>
             </div>
 
+            <div class="project-card">
+                <h3>Automated Discord Quiz Bot</h3>
+                <p><strong>Tech Stack:</strong> Python, Discord.py, Asyncio, Aiohttp, OpenTDB API, JSON Data Persistence</p>
+                <p>An asynchronous Discord application engineered to run automated, time-based trivia and speed challenge loops. Built with robust background task scheduling using <code>discord.ext.tasks</code>, the bot dynamically dispatches math puzzles, word anagrams, and API-driven trivia questions while maintaining persistent monthly leaderboards and historical Hall of Fame statistics.</p>
+                
+                <ul>
+                    <li><strong>Asynchronous Core:</strong> Operates non-blocking I/O routines using <code>asyncio</code> and <code>aiohttp</code> for external trivia API queries and real-time message event listening.</li>
+                    <li><strong>Automated Schedulers:</strong> Implements time-zone aware background loops (<code>ZoneInfo</code>) handling 75% probability hourly speed rounds, daily trivia timeouts, and automatic monthly leaderboard resets.</li>
+                    <li><strong>Interactive UI Components:</strong> Leverages modern Discord Slash Commands (<code>app_commands</code>) and dropdown UI views (<code>discord.ui.View</code>) for seamless user stat tracking and leaderboard navigation.</li>
+                </ul>
+
+                <div style="margin: 15px 0; text-align: center;">
+                    <img src="discordbot-screenshot.png" alt="Mulberry Quiz Bot Discord Interface and Leaderboard" onclick="openImage(this)">
+                </div>
+
+                <p class="action-links">
+                    <a href="https://github.com/Galladian/QuizBot" target="_blank">🔗 GitHub Code</a>
+                </p>
+            </div>
+
         </div>
     </section>
 
